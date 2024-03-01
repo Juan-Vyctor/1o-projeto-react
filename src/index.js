@@ -8,13 +8,13 @@ import reportWebVitals from './reportWebVitals';
 import App from './components/App.js';
 
 import Profile from './desafios/export.js';
+import Gallery from './desafios/spotmistake.js';
 
 // essa const que faz rodar de verdade tipo root mesmo pa
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		{/* <App /> */}
-		<Profile />
+		<App />
 	</React.StrictMode>
 );
 
