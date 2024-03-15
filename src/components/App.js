@@ -8,9 +8,9 @@ function App() {
 				<div className="dropdown">
 					<button className="dropbtn">Ver botões</button>
 					<div className="dropdown-content">
-						<Button site="a Amazon" link="https://www.amazon.com.br/"/>
-						<Button site="o Youtube" link="https://www.youtube.com/"/>
-						<Button site="a Wikipedia" link="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"/>
+						<Button tipo="button" alerta="indo pra" site="Amazon" link="https://www.amazon.com.br/"/>
+						<Button tipo="button" alerta="indo pro" site="Youtube" link="https://www.youtube.com/"/>
+						<Button tipo="button" alerta="indo pra" site="Wikipedia" link="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"/>
 					</div>
 				</div>
 			</header>
