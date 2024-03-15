@@ -1,32 +1,18 @@
 import './css/App.css';
-import Teste from './Teste.js';
+import Button from './SiteButton'
 
-// isso aqui é 'desestruturação' resumindo eu passo cada atributo que eu quero e não ficar usando sempre props. toda hora
-function App({personagem, sla, nome}) {
+function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={personagem} alt="aaaaa" />
-				<img src={sla} alt="aaaaa" />
-				<p>
-					{nome}
-				</p>
-
-				<Teste nome="teste"/>
-				<Teste nomeeee="ccccccccccccc"/>
-				
-				<a
-				className="App-link"
-				href="https://reactjs.org"
-				target="_blank"
-				rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-				
-				<Teste nomee="aaaaaaaa"/>
-				<Teste nomeee="bbbb"/>
-				{/* dá pra puxar outras página dentro de uma página e vai encadeando */}
+			<header className="App-header ">
+				<div className="dropdown">
+					<button className="dropbtn">Ver botões</button>
+					<div className="dropdown-content">
+						<Button site="a Amazon" link="https://www.amazon.com.br/"/>
+						<Button site="o Youtube" link="https://www.youtube.com/"/>
+						<Button site="a Wikipedia" link="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal"/>
+					</div>
+				</div>
 			</header>
 		</div>
 	);
