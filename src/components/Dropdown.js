@@ -2,24 +2,26 @@ import './css/Dropdown.css';
 
 function Ordem(lista) {
     let retorno = [];
-    for (let i = 0; i<lista.lenght; i++) {
-        {retorno.push(<a>{lista[i]}</a>)}
+
+    for (let i = 0; i<lista.length; i++) {
+        retorno.push(<a>{lista[i]}</a>)
     }
+    
 
     return(
         <>
             {retorno}
         </>
-    )
+    );
 }
 
 function Estrutura(titulo, lista) {
     return(
         <li className="dropdown">
             <a href="#">
-                <div className="dropdown-menu">
+                <div className="dropbtn">
                     {titulo}
-                    {Ordem(lista)}
+                    <div className='dropdown-content'>{Ordem(lista)}</div>
                 </div>
             </a>
         </li>
@@ -29,19 +31,18 @@ function Estrutura(titulo, lista) {
 export default function Dropdown (props) {
     return (
         <div>
+            {props.lista}
+            {Ordem(props.lista)}
             <ul>
-                <li className="dropbtn">
+                <li className="dropdown">
                     <a href="#">
-                        <div className="dropdown-content">
-                            {props.titulo[0]}
-                            {Ordem(props.lista)}
+                        <div className="dropbtn">
+                            {props.titulo}
+                            <div className='dropdown-content'>{Ordem(props.lista)}</div>
                         </div>
                     </a>
                 </li>
-                {Estrutura(props.titulo[1], props.lista)}
-                {Estrutura(props.titulo[2], props.lista)}
-                {Estrutura(props.titulo[3], props.lista)}
-                {Estrutura(props.titulo[4], props.lista)}
+               
             </ul>
         </div>
     )
