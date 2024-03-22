@@ -1,13 +1,9 @@
-// página principal aqui que roda tudo
-
-// precisa sair importando tudo que for usar
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/App.js';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// essa const que faz rodar de verdade tipo root mesmo pa
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
