@@ -1,3 +1,5 @@
+import './css/Dropdown.css';
+
 function Ordem(lista) {
     let retorno = [];
     for (let i = 0; i<lista.lenght; i++) {
@@ -28,9 +30,9 @@ export default function Dropdown (props) {
     return (
         <div>
             <ul>
-                <li className="dropdown">
+                <li className="dropbtn">
                     <a href="#">
-                        <div className="dropdown-menu">
+                        <div className="dropdown-content">
                             {props.titulo[0]}
                             {Ordem(props.lista)}
                         </div>
