@@ -11,7 +11,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		<App/>
+	<Gallery />
+	{/* <App nome="patrocinado por L'Oreal Paris" personagem={homura} sla='https://64.media.tumblr.com/b2c5e2a38641735f31b4106b0b363139/49040cb68629585b-91/s1280x1920/bca05f8dda44af8b3735eebf5350756d2c5726eb.gifv'/> */}
 	</React.StrictMode>
 );
 
