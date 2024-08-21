@@ -15,19 +15,6 @@ function Ordem(lista) {
     );
 }
 
-function Estrutura(titulo, lista) {
-    return(
-        <li className="dropdown">
-            <a href="#">
-                <div className="dropbtn">
-                    {titulo}
-                    <div className='dropdown-content'>{Ordem(lista)}</div>
-                </div>
-            </a>
-        </li>
-    )
-}
-
 export default function Dropdown (props) {
     return (
         <div>
