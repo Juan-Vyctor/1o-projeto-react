@@ -20,8 +20,8 @@ function App({personagem, sla, nome}) {
 				>
 					Learn React
 				</a>
-				<Botao tipo='button' alerta='teste' conteudo='teste2' link='https://www.youtube.com/?app=desktop&hl=pt' />
 				{/* dá pra puxar outras página dentro de uma página e vai encadeando */}
+				<Botao tipo='text' alerta='teste' conteudo='teste2' link='https://www.youtube.com/?app=desktop&hl=pt' />
 			</header>
 		</div>
 	);
