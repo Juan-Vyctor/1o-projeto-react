@@ -4,11 +4,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './components/App.js';
+// import App from './components/App.js';
 // import Nav from './components/Nav.js';
 // import Dropdown from './components/Dropdown.js';
 import reportWebVitals from './reportWebVitals';
-import homura from './homura.gif'
+// import homura from './homura.gif'
+import Hook from './components/Hook.js'
 
 // const titulo = ['a', 'b', 'c', 'd', 'e'];
 // const lista = ['menu 1', 'menu 2', 'menu 3'];
@@ -21,7 +22,8 @@ root.render(
 	{/* <Nav>
 		<Dropdown titulo={titulo} lista={lista}/>
 	</Nav> */}
-	<App nome="patrocinado por L'Oreal Paris" personagem={homura} sla='https://64.media.tumblr.com/b2c5e2a38641735f31b4106b0b363139/49040cb68629585b-91/s1280x1920/bca05f8dda44af8b3735eebf5350756d2c5726eb.gifv'/>
+	{/* <App nome="patrocinado por L'Oreal Paris" personagem={homura} sla='https://64.media.tumblr.com/b2c5e2a38641735f31b4106b0b363139/49040cb68629585b-91/s1280x1920/bca05f8dda44af8b3735eebf5350756d2c5726eb.gifv'/> */}
+	<Hook />
 	</React.StrictMode>
 );
 
