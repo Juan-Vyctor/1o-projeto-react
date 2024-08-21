@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 export default function Hook() {
-    function cadastrarUsuario() {
-        return (
-            alert('o nome passado foi ${name}')
-        )
+    function cadastrarUsuario(e) {
+        // o preventDefault() faz que ignore que faz normalmente
+        e.preventDefault();
+        alert(`o nome passado foi ${name}`)
     }
 
     // isso aqui é o Hook, o useState() é uma memória pro front e vai ficar salva mesmo sem ir pro back
