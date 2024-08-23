@@ -7,6 +7,10 @@ export default function Hook() {
         alert(`o nome passado foi ${name}`);
     }
 
+    function handleSelectChange(e) {
+        setSelectedOption(e.target.value);
+    }
+
     // isso aqui é o Hook, o useState() é uma memória pro front e vai ficar salva mesmo sem ir pro back
     const [name,setName] = useState();
     const [selectedOption,setSelectedOption] = useState();
@@ -28,10 +32,11 @@ export default function Hook() {
             </form>
             <br />
             <select value={selectedOption} onChange={handleSelectChange}>
-                <option>Selecione uma opção</option>
+                <option value=''>Selecione uma opção</option>
                 <option value='1'>um</option>
                 <option value='2'>dois</option>
             </select>
+            <p>{selectedOption}</p>
         </div>
     )
 }
