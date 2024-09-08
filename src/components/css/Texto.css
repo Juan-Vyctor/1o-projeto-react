@@ -1,0 +1,11 @@
+
+.hide_controler{
+    display: none;
+}
+.dinamic_text:hover .hide_controler{
+    display: block;
+}
+
+.dinamic_text {
+    width: fit-content;
+}

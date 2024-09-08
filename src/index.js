@@ -10,7 +10,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import homura from './homura.gif'
 // import Hook from './components/Hook.js'
-import Texto from './components/Cores';
+import Texto from './components/Texto';
 
 // const titulo = ['a', 'b', 'c', 'd', 'e'];
 // const lista = ['menu 1', 'menu 2', 'menu 3'];
