@@ -28,9 +28,9 @@ function Reducer(props) {
         const [green, setGreen] = useReducer(reducer, 0);
         const [blue, setBlue] = useReducer(reducer, 0);
 
-        const [oldRed, setOldRed] = useState();
-        const [oldGreen, setOldGreen] = useState();
-        const [oldBlue, setOldBlue] = useState();
+        const [oldRed, setOldRed] = useState(0);
+        const [oldGreen, setOldGreen] = useState(0);
+        const [oldBlue, setOldBlue] = useState(0);
         // setcontsvalue()
         return (
             <div class='dinamic_text'>
@@ -53,7 +53,7 @@ function Reducer(props) {
                     </input>
                 </div>
                 <div class='hide_controler'>
-                    <h4>green atual do texto: {green}</h4>
+                    <h4>Green atual do texto: {green}</h4>
                         <input type="range" id="green" name="green" min="0" max="255"
                             onChange={
                                 (e) => {
