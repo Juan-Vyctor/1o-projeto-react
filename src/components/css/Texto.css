@@ -1,11 +1,15 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-.hide_controler{
+.hide-controler{
     display: none;
 }
-.dinamic_text:hover .hide_controler{
+
+.dinamic-text:hover .hide-controler{
     display: block;
 }
 
-.dinamic_text {
+.dinamic-text {
     width: fit-content;
 }
