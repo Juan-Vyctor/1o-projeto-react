@@ -31,7 +31,7 @@ function Reducer(props) {
         const [oldRed, setOldRed] = useState();
         const [oldGreen, setOldGreen] = useState();
         const [oldBlue, setOldBlue] = useState();
-        // setcontsvalue()
+        
         return (
             <div class='dinamic_text'>
                 <p style={{color: "rgb("+red+","+green+","+blue+")"}}>{props.text}</p>
